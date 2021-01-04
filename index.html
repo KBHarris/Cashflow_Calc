@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>CashFlow Calculator</title>
+</head>
+<body>
+    <Header>
+        <h1 class="text-center m-4">Cash Flow Calculator</h1>
+    </Header>
+    <div class="container">
+        <div class="row">
+            <div class="col border border-dark">
+                <h2 class="text-center m-4">Income</h2>
+                <form >
+                    <div class="form-group">
+                        <div class="input-group m-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="rental-income" placeholder="Rental Income">
+                        </div>
+                        <div class="input-group m-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="other-income" placeholder="Other Income">
+                        </div>
+                        <div class="input-group m-2">
+                            <label class="mr-2 col-form-label">Total</label>
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="total-income" readonly>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col border border-dark">
+                <h2 class="text-center m-4">Cash Flow</h2>
+                <form>
+                    <div class="form-group">
+                        <div class="input-group m-2">
+                            <label class="mr-2 col-form-label">Income</label>
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="cf-income" readonly>
+                        </div>
+                        <div class="input-group m-2">
+                            <label class="mr-2 col-form-label">Expenses</label>
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="cf-expenses" readonly>
+                        </div>
+                        <div class="input-group m-2">
+                            <label class="mr-2 col-form-label">Monthly Cashflow</label>
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="cf-monthly" readonly>
+                        </div>
+                        <div class="input-group m-2">
+                            <label class="mr-2 col-form-label">Yearly Cashflow</label>
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="cf-yearly" readonly>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-dark">
+                <h2 class="text-center m-4">Expenses</h2>
+                <form >
+                    <div class="form-group">
+                        <div class="input-group m-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="ex-mortgage" placeholder="Mortgage">
+                        </div>
+                        <div class="input-group m-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="ex-taxes" placeholder="Taxes">
+                        </div>
+                        <div class="input-group m-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="ex-insurance" placeholder="Insurance">
+                        </div>
+                        <div class="input-group m-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="ex-utilities" placeholder="Utilities">
+                        </div>
+                        <div class="input-group m-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="ex-hoa" placeholder="HOA Fees">
+                        </div>
+                        <div class="input-group m-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="ex-repairs" placeholder="Repairs">
+                        </div>
+                        <div class="input-group m-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="ex-lawn" placeholder="Lawn Care">
+                        </div>
+                        <div class="input-group m-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="ex-vacancy" placeholder="Vacancy">
+                        </div>
+                        <div class="input-group m-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="ex-capex" placeholder="Capital Expenditures">
+                        </div>
+                        <div class="input-group m-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control text-danger" id="ex-propman" placeholder="Property Management">
+                        </div>
+                        <div class="input-group m-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control text-danger" id="ex-other" placeholder="Other">
+                        </div>
+                        <div class="input-group m-2">
+                            <label class="mr-2 col-form-label">Total</label>
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="total-ex" readonly>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col border border-dark">
+                <h2 class="text-center m-4">Cash on Cash ROI</h2>
+                <form>
+                    <div class="form-group">
+                        <div class="input-group m-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="roi-downpayment" placeholder="Down Payment">
+                        </div>
+                        <div class="input-group m-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="roi-closingcost" placeholder="Closing Costs">
+                        </div>
+                        <div class="input-group m-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control text-danger" id="roi-rehab" placeholder="Rehab Costs">
+                        </div>
+                        <div class="input-group m-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control text-danger" id="roi-other" placeholder="Other">
+                        </div>
+                        <div class="input-group m-2">
+                            <label class="mr-2 col-form-label">Total Investment</label>
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">$</div>
+                            </div>
+                            <input type="number" class="form-control" id="roi-total" readonly>
+                        </div>
+                        <div class="input-group mt-5 mb-2 ml-2 mr-2">
+                            <label class="mr-2 col-form-label">CoC Return</label>
+                            <input type="number" class="form-control" id="coc-return" readonly>
+                            <div class="input-group-append">
+                                <div class="input-group-text">%</div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center">
+        <button type="button" class="btn btn-dark m-3">Calculate</button>
+    
+        <!--Will be added when Export function is completed
+
+        <button type="button" class="btn btn-dark mt-3 ml-4">Calculate</button> 
+        <button type="button" class="btn btn-dark mt-3 ml-5">Export to PDF</button>
+
+        -->
+
+    </div>
+</body>
+</html>
